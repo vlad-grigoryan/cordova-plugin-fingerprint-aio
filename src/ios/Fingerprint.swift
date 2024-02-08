@@ -52,6 +52,8 @@ enum PluginError:Int {
                     biometryType = "finger";
                 case .faceID:
                     biometryType = "face"
+                case .opticID:
+                    biometryType = "optic"
                 @unknown default:
                     errorResponse["message"] = "Unkown biometry type"
                 }
